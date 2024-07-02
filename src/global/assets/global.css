@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import '~swiper/swiper-bundle.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #ffca1d;
+  --secondary-color: #4b4aef;
+  --white-color: #ffffff;
+  --black-color: #ffffff;
+
+  /* SECTIONS STYLES */
+  --global-sections-max-width: 1600px;
+  --global-sections-padding: 0px 40px;
+
+  /* SPACING */
+  --sections-seperator-space: 120px;
+  --title-description-up-seperator-space: 20px;
+  --title-description-bottom-seperator-space: 80px;
+  --cards-gap-seperator-space: 40px;
+
+  /* text-styles colors | sizes */
+  /* title */
+  --txt-title-primary-color: var(--primary-color);
+  --txt-title-secondary-color: var(--secondary-color);
+  --txt-title-size: 36px;
+  --txt-title-lineHeight: 42px;
+  /* title-description */
+  --txt-title-description-color: #696984;
+  --txt-title-description-size: 24px;
+  --txt-title-description-lineHeight: 30px;
+  /* subtitle */
+  --txt-subtitle-color: var(--secondary-color);
+  --txt-subtitle-size: 24px;
+  --txt-subtitle-lineHeight: 24px;
+  /* description */
+  --txt-description-color: #585858;
+  --txt-description-size: 20px;
+  --txt-description-lineHeight: 24px;
+}
+
+/* ER -> EduRate */
+.er-wrapper {
+  max-width: var(--global-sections-max-width);
+  padding: var(--global-sections-padding);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.er-title {
+  color: var(--txt-title-secondary-color);
+  font-size: var(--txt-title-size);
+  line-height: var(--txt-title-lineHeight);
+  text-align: center;
+}
+
+.er-title-mark {
+  color: var(--txt-title-primary-color);
+  font-size: var(--txt-title-size);
+  line-height: var(--txt-title-lineHeight);
+}
+
+.er-title-description {
+  color: var(--txt-title-description-color);
+  font-size: var(--txt-title-description-size);
+  line-height: var(--txt-title-description-lineHeight);
+  text-align: center;
+}
+
+.er-subtitle {
+  color: var(--txt-subtitle-color);
+  font-size: var(--txt-subtitle-size);
+  line-height: var(--txt-subtitle-lineHeight);
+}
+
+.er-description {
+  color: var(--txt-description-color);
+  font-size: var(--txt-description-size);
+  line-height: var(--txt-description-lineHeight);
+}
