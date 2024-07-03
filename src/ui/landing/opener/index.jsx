@@ -11,7 +11,7 @@ import {
   Container,
   Wrapper,
   IconBox,
-  UserIcon,
+  UserIcon,   
 } from './style';
 
 const Opener = () => {

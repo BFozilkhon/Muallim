@@ -21,8 +21,8 @@ const Purpose = () => {
           </IconBox>
           <Box.Subtitle className='er-subtitle'>Business Planning</Box.Subtitle>
           <Box.Description className='er-description'>
-            Our Business Plan is a written document describing a company’s core
-            business activities.
+            Our Business Plan is a written document describing doing a company’s
+            core business activities.
           </Box.Description>
         </Box>
         {/* box2 */}

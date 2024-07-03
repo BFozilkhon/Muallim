@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box1, Box2, Container } from './style';
+
 import PartnerCarousel from './carousel';
+
+import { Box1, Box2, Container } from './style';
 
 const Partner = () => {
   return (

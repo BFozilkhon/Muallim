@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ERButton from '../../../../../global/generics/button';
 
 import { ButtonContainer, Container, Logo, NavItems } from './style';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (

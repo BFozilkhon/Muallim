@@ -86,3 +86,107 @@
   font-size: var(--txt-description-size);
   line-height: var(--txt-description-lineHeight);
 }
+
+@media (max-width: 1300px) {
+  :root {
+    --global-sections-padding: 0px 35px;
+
+    /* SPACING */
+    --sections-seperator-space: 100px;
+    --title-description-up-seperator-space: 18px;
+    --title-description-bottom-seperator-space: 70px;
+    --cards-gap-seperator-space: 35px;
+
+    /* text-styles colors | sizes */
+    /* title */
+    --txt-title-size: 34px;
+    --txt-title-lineHeight: 40px;
+    /* title-description */
+    --txt-title-description-size: 22px;
+    --txt-title-description-lineHeight: 26px;
+    /* subtitle */
+    --txt-subtitle-size: 22px;
+    --txt-subtitle-lineHeight: 20px;
+    /* description */
+    --txt-description-size: 18px;
+    --txt-description-lineHeight: 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  :root {
+    --global-sections-padding: 0px 30px;
+
+    /* SPACING */
+    --sections-seperator-space: 80px;
+    --title-description-up-seperator-space: 15px;
+    --title-description-bottom-seperator-space: 60px;
+    --cards-gap-seperator-space: 30px;
+
+    /* text-styles colors | sizes */
+    /* title */
+    --txt-title-size: 32px;
+    --txt-title-lineHeight: 38px;
+    /* title-description */
+    --txt-title-description-size: 20px;
+    --txt-title-description-lineHeight: 24px;
+    /* subtitle */
+    --txt-subtitle-size: 20px;
+    --txt-subtitle-lineHeight: 22px;
+    /* description */
+    --txt-description-size: 17px;
+    --txt-description-lineHeight: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  :root {
+    --global-sections-padding: 0px 25px;
+
+    /* SPACING */
+    --sections-seperator-space: 70px;
+    --title-description-up-seperator-space: 12px;
+    --title-description-bottom-seperator-space: 50px;
+    --cards-gap-seperator-space: 25px;
+
+    /* text-styles colors | sizes */
+    /* title */
+    --txt-title-size: 28px;
+    --txt-title-lineHeight: 32px;
+    /* title-description */
+    --txt-title-description-size: 18px;
+    --txt-title-description-lineHeight: 25px;
+    /* subtitle */
+    --txt-subtitle-size: 18px;
+    --txt-subtitle-lineHeight: 25px;
+    /* description */
+    --txt-description-size: 16px;
+    --txt-description-lineHeight: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --global-sections-padding: 0px 20px;
+
+    /* SPACING */
+    --sections-seperator-space: 60px;
+    --title-description-up-seperator-space: 10px;
+    --title-description-bottom-seperator-space: 40px;
+    --cards-gap-seperator-space: 20px;
+
+    /* text-styles colors | sizes */
+    /* title */
+    --txt-title-size: 24px;
+    --txt-title-lineHeight: 28px;
+    /* title-description */
+    --txt-title-description-size: 16px;
+    --txt-title-description-lineHeight: 19px;
+    /* subtitle */
+    --txt-subtitle-size: 17px;
+    --txt-subtitle-lineHeight: 24px;
+    /* description */
+    --txt-description-size: 15px;
+    --txt-description-lineHeight: 23px;
+  }
+}

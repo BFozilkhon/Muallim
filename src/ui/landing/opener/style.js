@@ -17,6 +17,7 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 `;
 
 export const Wrapper = styled.div`
@@ -68,6 +69,19 @@ export const Box2 = styled.div`
     top: 50%;
     right: 0;
   }
+
+  @media (max-width: 1600px) {
+    .star-position {
+      top: 85px;
+      left: -60px;
+    }
+    .user-position {
+      bottom: 5%;
+    }
+    .email-position {
+      top: 55%;
+    }
+  }
 `;
 
 Box2.TeacherImg = styled.div`
@@ -77,6 +91,10 @@ Box2.TeacherImg = styled.div`
   height: 137%;
   width: 85%;
   margin-top: -80px;
+
+  @media (max-width: 1600px) {
+    height: 121%;
+  }
 `;
 
 // Animated Cards
