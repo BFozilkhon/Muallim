@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Navbar from '../shared/layouts/navbar';
-import ERButton from '../../../global/generics/button';
+import Navbar from '../../../shared/layouts/navbar';
+import ERButton from '../../../../../global/generics/button';
 import { AnimatedButton } from './animatedButton';
 
 import {
@@ -11,7 +11,7 @@ import {
   Container,
   Wrapper,
   IconBox,
-  UserIcon,   
+  UserIcon,
 } from './style';
 
 const Opener = () => {
@@ -30,7 +30,7 @@ const Opener = () => {
             media promotions, and competitions.
           </Box1.Descr>
 
-          <ERButton>Let's Rate</ERButton>
+          <ERButton className='opener-btn'>Let's Rate</ERButton>
         </Box1>
         <Box2>
           <Box2.TeacherImg />

@@ -1,4 +1,5 @@
 import GenericPage from '../../generics/genericPage';
+import Login from '../../../ui/auth/login';
 
 export const authRoutes = [
   {
@@ -13,6 +14,6 @@ export const authRoutes = [
     text: 'Login',
     path: '/login',
     exact: true,
-    element: <GenericPage />,
+    element: <Login />,
   },
 ];

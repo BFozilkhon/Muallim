@@ -27,6 +27,15 @@ Box1.Text = styled.div`
   font-size: 30px;
   margin-top: 10px;
 
+  span {
+    display: block;
+  }
+
+  @media (max-width: 1450px) {
+    span {
+      display: inline;
+    }
+  }
   @media (max-width: 1300px) {
     font-size: 26px;
   }

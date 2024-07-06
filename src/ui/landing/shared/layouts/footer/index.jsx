@@ -17,8 +17,10 @@ const Footer = () => {
       </TopFlex>
       <Container.Title>Send your message via Email</Container.Title>
       <Flex>
-        <ERInput placeholder={'Write Your Message'} />
-        <ERButton borderRadius={'80px'}>Sending</ERButton>
+        <ERInput className='footer-input' placeholder={'Write Your Message'} />
+        <ERButton className='footer-btn' borderRadius={'80px'}>
+          Sending
+        </ERButton>
       </Flex>
 
       <Flex item={true}>

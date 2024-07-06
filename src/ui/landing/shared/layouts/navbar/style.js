@@ -4,15 +4,46 @@ import { NavLink } from 'react-router-dom';
 // icon
 import { ReactComponent as LogoIcon } from '../../../../../global/assets/icons/logo.svg';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .hamburger-react {
+    color: white !important;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .menu {
+      display: block;
+    }
+  }
+
+  @media (max-width: 920px) {
+    border-bottom: 2px solid var(--white-color);
+  }
+  @media (max-width: 600px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .hamburger-react {
+      transform: scale(0.9);
+    }
+  }
 `;
 
-const Logo = styled(LogoIcon)``;
+export const Logo = styled(LogoIcon)`
+  @media (max-width: 600px) {
+    transform: scale(0.9);
+  }
+`;
 
-const NavItems = styled.div`
+export const NavItems = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
@@ -20,6 +51,10 @@ const NavItems = styled.div`
 
   .active {
     color: var(--primary-color);
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
   }
 `;
 
@@ -34,10 +69,13 @@ NavItems.Item = styled(NavLink)`
   }
 `;
 
-const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 45px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 ButtonContainer.Login = styled.div`
@@ -48,6 +86,8 @@ ButtonContainer.Login = styled.div`
   &:hover {
     color: var(--primary-color);
   }
-`;
 
-export { Container, Logo, NavItems, ButtonContainer };
+  @media (max-width: 1200px) {
+    color: var(--primary-color);
+  }
+`;

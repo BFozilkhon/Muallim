@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 // icon
-import { ReactComponent as PurposeIcon1 } from '../shared/assets/icons/purpose1.svg';
+import { ReactComponent as PurposeIcon1 } from '../../../shared/assets/icons/purpose1.svg';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: var(--sections-seperator-space);
-  padding-bottom: 100px;
 `;
 
 Container.Title = styled.h1``;
@@ -49,9 +48,12 @@ export const Box = styled.div`
   @media (max-width: 920px) {
     flex: 300px;
     width: fit-content;
-    box-shadow: 0px 8px 60px 0px rgba(38, 45, 118, 0.15);
+    box-shadow: 0px 8px 30px 0px rgba(38, 45, 118, 0.15);
     padding: 16px;
     border-radius: 16px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px 0px;
   }
 `;
 

@@ -31,4 +31,18 @@ export const Input = styled.input`
   background-color: ${({ backgroundColor }) => backgroundColor};
   border-color: ${({ borderColor }) => borderColor};
   border-radius: ${({ borderRadius }) => borderRadius};
+  width: ${({ width }) => width};
+
+  /* media */
+  @media (max-width: 900px) {
+    padding: 12px 30px;
+    height: 55px;
+  }
+  @media (max-width: 600px) {
+    padding: 12px 24px;
+  }
+  @media (max-width: 480px) {
+    padding: 12px 18px;
+    height: 50px;
+  }
 `;

@@ -1,5 +1,5 @@
-import LandingPage from '../../../ui/landing';
 import GenericPage from '../../generics/genericPage';
+import LandingHomePage from '../../../ui/landing/pages/home';
 
 export const landingRoutes = [
   {
@@ -7,7 +7,7 @@ export const landingRoutes = [
     text: 'Home',
     path: '/',
     exact: true,
-    element: <LandingPage />,
+    element: <LandingHomePage />,
   },
   {
     id: 2,

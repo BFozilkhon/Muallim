@@ -3,7 +3,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
-import { partnerData } from '../../shared/utils/partnerData';
+import { partnerData } from '../../../../shared/utils/partnerData';
 
 import 'swiper/css';
 import { PartnerImg } from '../style';

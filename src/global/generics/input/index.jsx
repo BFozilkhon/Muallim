@@ -7,12 +7,14 @@ const ERInput = ({
   backgroundColor,
   borderColor,
   borderRadius,
+  width,
   placeholder,
   ...rest
 }) => {
   return (
     <Input
       color={color}
+      width={width}
       backgroundColor={backgroundColor}
       borderColor={borderColor}
       borderRadius={borderRadius}

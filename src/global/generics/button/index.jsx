@@ -10,6 +10,7 @@ const ERButton = ({
   margin,
   backgroundColor,
   color,
+  width,
   clickable = true,
   onClick,
   ...rest
@@ -20,6 +21,7 @@ const ERButton = ({
       type={type}
       borderRadius={borderRadius}
       padding={padding}
+      width={width}
       backgroundColor={backgroundColor}
       color={color}
       margin={margin}

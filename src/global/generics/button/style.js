@@ -15,10 +15,15 @@ const getButtonType = ({ type }) => {
         border: '1px solid var(--primary-color)',
         color: 'var(--primary-color)',
       };
+    default:
+      return {
+        background: 'var(--primary-color)',
+        color: 'var(--white-color)',
+      };
   }
 };
 
-const Container = styled.div`
+export const Container = styled.div`
   /* extra */
   border: none;
   outline: none;
@@ -50,6 +55,19 @@ const Container = styled.div`
   margin: ${({ margin }) => margin};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ color }) => color};
-`;
+  width: ${({ width }) => width};
 
-export { Container };
+  /* media */
+  @media (max-width: 900px) {
+    padding: 14px 45px;
+    font-size: 24px;
+  }
+  @media (max-width: 600px) {
+    padding: 13px 40px;
+    font-size: 22px;
+  }
+  @media (max-width: 480px) {
+    padding: 12px 35px;
+    font-size: 20px;
+  }
+`;

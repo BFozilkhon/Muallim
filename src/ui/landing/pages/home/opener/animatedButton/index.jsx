@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
-import ERButton from '../../../../global/generics/button';
+import ERButton from '../../../../../../global/generics/button';
 
 export const AnimatedButton = () => {
   const phrases = [
