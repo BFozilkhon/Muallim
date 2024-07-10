@@ -4,9 +4,9 @@ import Pages from '../global/routes';
 
 const Root = () => {
   return (
-    <div>
+    <>
       <Pages />
-    </div>
+    </>
   );
 };
 

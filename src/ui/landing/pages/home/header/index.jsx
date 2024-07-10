@@ -14,10 +14,10 @@ import {
   UserIcon,
 } from './style';
 
-const Opener = () => {
+const Header = () => {
   return (
     <Container>
-      <Navbar />
+      <Navbar type='primary' />
 
       {/* Main */}
       <Wrapper className='er-wrapper'>
@@ -67,4 +67,4 @@ const Opener = () => {
   );
 };
 
-export default Opener;
+export default Header;

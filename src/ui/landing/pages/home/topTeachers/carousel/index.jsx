@@ -55,7 +55,7 @@ const TopTeachersCarousel = () => {
       }}
       modules={[EffectCoverflow, Pagination, Autoplay]}
     >
-      {topTeachersData.map((value, index) => {
+      {topTeachersData.slice(0, 10).map((value, index) => {
         return (
           <Card key={index}>
             <Card.Crown />

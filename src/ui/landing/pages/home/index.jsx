@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Opener from './opener';
+import Header from './header';
 import Purpose from './purpose';
 import Partner from './partner';
 import TopTeachers from './topTeachers';
@@ -9,14 +9,14 @@ import Top from '../../../../global/generics/top';
 
 const LandingHomePage = () => {
   return (
-    <div>
-      <Opener />
+    <>
+      <Header />
       <Partner />
       <Purpose />
       <TopTeachers />
       <Footer />
       <Top />
-    </div>
+    </>
   );
 };
 

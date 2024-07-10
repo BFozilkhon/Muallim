@@ -4,6 +4,14 @@ import { NavLink } from 'react-router-dom';
 // icon
 import { ReactComponent as LogoIcon } from '../../../../../global/assets/icons/logo.svg';
 
+export const FullWithBox = styled.div`
+  width: 100%;
+  background: ${({ type }) => type === 'secondary' && 'var(--secondary-color)'};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
@@ -79,12 +87,15 @@ export const ButtonContainer = styled.div`
 `;
 
 ButtonContainer.Login = styled.div`
-  color: var(--txt-description-color);
+  color: ${({ type }) =>
+    type === 'secondary'
+      ? 'var(--white-color)'
+      : 'var(--txt-description-color)'};
   font-size: 24px;
   cursor: pointer;
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--primary-color);  
   }
 
   @media (max-width: 1200px) {

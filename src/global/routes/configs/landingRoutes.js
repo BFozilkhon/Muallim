@@ -1,5 +1,6 @@
 import GenericPage from '../../generics/genericPage';
 import LandingHomePage from '../../../ui/landing/pages/home';
+import LandingRankingPage from '../../../ui/landing/pages/ranking';
 
 export const landingRoutes = [
   {
@@ -14,7 +15,7 @@ export const landingRoutes = [
     text: 'Ranking',
     path: '/ranking',
     exact: true,
-    element: <GenericPage />,
+    element: <LandingRankingPage />,
   },
   {
     id: 3,

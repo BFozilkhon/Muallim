@@ -5,9 +5,15 @@ import { Turn } from 'hamburger-react';
 import ERButton from '../../../../../global/generics/button';
 import ERTooltip from '../../../../../global/generics/tooltip';
 
-import { ButtonContainer, Container, Logo, NavItems } from './style';
+import {
+  ButtonContainer,
+  Container,
+  FullWithBox,
+  Logo,
+  NavItems,
+} from './style';
 
-const Navbar = () => {
+const Navbar = ({ type = 'secondary' }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   if (isOpen) {
@@ -17,30 +23,32 @@ const Navbar = () => {
   }
 
   return (
-    <Container className='er-wrapper'>
-      <Logo />
+    <FullWithBox type={type}>
+      <Container className='er-wrapper'>
+        <Logo />
 
-      <NavItems>
-        <NavItems.Item to='/'>Home</NavItems.Item>
-        <NavItems.Item to='/ranking'>Ranking</NavItems.Item>
-        <NavItems.Item to='/about'>About</NavItems.Item>
-        <NavItems.Item to='/features'>Features</NavItems.Item>
-      </NavItems>
+        <NavItems>
+          <NavItems.Item to='/'>Home</NavItems.Item>
+          <NavItems.Item to='/ranking'>Ranking</NavItems.Item>
+          <NavItems.Item to='/about'>About</NavItems.Item>
+          <NavItems.Item to='/features'>Features</NavItems.Item>
+        </NavItems>
 
-      <ButtonContainer>
-        <Link to='/login'>
-          <ButtonContainer.Login>Login</ButtonContainer.Login>
-        </Link>
-        <Link to='register'>
-          <ERButton>Sign Up</ERButton>
-        </Link>
-      </ButtonContainer>
-      <ERTooltip className='menu'>
-        <div>
-          <Turn toggled={isOpen} toggle={setIsOpen} />
-        </div>
-      </ERTooltip>
-    </Container>
+        <ButtonContainer>
+          <Link to='/login'>
+            <ButtonContainer.Login type={type}>Login</ButtonContainer.Login>
+          </Link>
+          <Link to='register'>
+            <ERButton>Sign Up</ERButton>
+          </Link>
+        </ButtonContainer>
+        <ERTooltip className='menu'>
+          <div>
+            <Turn toggled={isOpen} toggle={setIsOpen} />
+          </div>
+        </ERTooltip>
+      </Container>
+    </FullWithBox>
   );
 };
 

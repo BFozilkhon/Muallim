@@ -1,6 +1,7 @@
 import React from 'react';
-import ERButton from '../button';
 import { Link } from 'react-router-dom';
+
+import ERButton from '../button';
 
 const GenericPage = () => {
   return (
