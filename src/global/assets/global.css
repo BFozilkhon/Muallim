@@ -15,6 +15,11 @@
   --white-color: #ffffff;
   --black-color: #000000;
 
+  /* scrollbar colors */
+  --scrollbar-track-color: #f1f1f1;
+  --scrollbar-thumb-color: #888;
+  --scrollbar-thumb-hover-color: #555;
+
   /* SECTIONS STYLES */
   --global-sections-max-width: 1600px;
   --global-sections-padding: 0px 40px;

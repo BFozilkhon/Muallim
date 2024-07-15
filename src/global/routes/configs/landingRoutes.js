@@ -1,6 +1,7 @@
 import GenericPage from '../../generics/genericPage';
 import LandingHomePage from '../../../ui/landing/pages/home';
 import LandingRankingPage from '../../../ui/landing/pages/ranking';
+import LandingBlogPage from '../../../ui/landing/pages/blog';
 
 export const landingRoutes = [
   {
@@ -25,7 +26,21 @@ export const landingRoutes = [
     element: <GenericPage />,
   },
   {
+    id: 3,
+    text: 'Blog',
+    path: '/blog',
+    exact: true,
+    element: <LandingBlogPage />,
+  },
+  {
     id: 4,
+    text: 'BlogParams',
+    path: '/blog/:specialKey',
+    exact: true,
+    element: <GenericPage />,
+  },
+  {
+    id: 5,
     text: 'Features',
     path: '/Features',
     exact: true,

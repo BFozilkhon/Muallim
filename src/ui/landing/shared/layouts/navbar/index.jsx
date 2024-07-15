@@ -17,7 +17,7 @@ const Navbar = ({ type = 'secondary' }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   if (isOpen) {
-    document.body.style.overflow = 'auto'; // change hidden then
+    document.body.style.overflow = 'auto';
   } else {
     document.body.style.overflow = 'auto';
   }
@@ -25,13 +25,15 @@ const Navbar = ({ type = 'secondary' }) => {
   return (
     <FullWithBox type={type}>
       <Container className='er-wrapper'>
-        <Logo />
+        <Link to={'/'}>
+          <Logo />
+        </Link>
 
         <NavItems>
           <NavItems.Item to='/'>Home</NavItems.Item>
           <NavItems.Item to='/ranking'>Ranking</NavItems.Item>
           <NavItems.Item to='/about'>About</NavItems.Item>
-          <NavItems.Item to='/features'>Features</NavItems.Item>
+          <NavItems.Item to='/blog'>Blog</NavItems.Item>
         </NavItems>
 
         <ButtonContainer>

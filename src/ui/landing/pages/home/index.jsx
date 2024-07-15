@@ -6,6 +6,8 @@ import Partner from './partner';
 import TopTeachers from './topTeachers';
 import Footer from '../../shared/layouts/footer';
 import Top from '../../../../global/generics/top';
+import Testimonial from './testimonial';
+import FAQ from './faq';
 
 const LandingHomePage = () => {
   return (
@@ -14,6 +16,8 @@ const LandingHomePage = () => {
       <Partner />
       <Purpose />
       <TopTeachers />
+      <FAQ />
+      <Testimonial />
       <Footer />
       <Top />
     </>
