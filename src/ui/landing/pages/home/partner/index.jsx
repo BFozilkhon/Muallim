@@ -10,7 +10,7 @@ const Partner = () => {
       <Box1>
         <Box1.Line />
         <Box1.Text>
-          See why over 100,000 teams choose <span>EduRate.uz</span>
+          See why over 100,000 teams choose <span>Muallim.uz</span>
         </Box1.Text>
       </Box1>
       <Box2>

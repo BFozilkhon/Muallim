@@ -2,6 +2,7 @@ import React from 'react';
 
 import ERButton from '../../../../../global/generics/button';
 import ERInput from '../../../../../global/generics/input';
+import logo from '../../assets/images/logo.jpg';
 
 import { Container, Flex, TopFlex } from './style';
 
@@ -9,7 +10,8 @@ const Footer = () => {
   return (
     <Container>
       <TopFlex>
-        <TopFlex.Logo />
+        <img className='footer-logo' src={logo} alt='' />
+        {/* <TopFlex.Logo /> */}
         <TopFlex.Line />
         <TopFlex.Prompt>
           Rate Your Teacher <br /> With EduRate

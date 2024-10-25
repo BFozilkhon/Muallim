@@ -5,7 +5,7 @@ import ERButton from '../../../../../../global/generics/button';
 
 export const AnimatedButton = () => {
   const phrases = [
-    'Welcome to EduRate',
+    'Welcome to Muallim',
     'Rate Your Teacher',
     'See Top-Ranking',
   ];

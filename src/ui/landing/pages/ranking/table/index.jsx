@@ -17,7 +17,7 @@ const RankingTable = ({ data }) => {
   return (
     <Container className='er-wrapper'>
       <Container.Title className='er-title'>
-        EduRate Teachers <span className='er-title-mark'> Ranking Board</span>
+        Muallim Teachers <span className='er-title-mark'> Ranking Board</span>
       </Container.Title>
       <StyledTable
         dataSource={dataSource}

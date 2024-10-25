@@ -10,7 +10,6 @@ const Login = () => {
   return (
     <Container>
       <Box>
-        <Box.Logo />
         <Box.Title>Welcome to Login 🎓</Box.Title>
         <Form>
           <ERInput

@@ -11,6 +11,11 @@ export const Container = styled.div`
   padding: 74px 40px 24px 40px;
   margin-top: var(--sections-seperator-space);
 
+  .footer-logo {
+    width: 200px;
+    height: 70px;
+  }
+
   @media (max-width: 1020px) {
     padding: 60px 30px 20px 30px;
   }

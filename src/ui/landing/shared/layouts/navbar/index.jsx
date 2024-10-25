@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Turn } from 'hamburger-react';
 
+import logo from '../../assets/images/logo.jpg';
+
 import ERButton from '../../../../../global/generics/button';
 import ERTooltip from '../../../../../global/generics/tooltip';
 
@@ -26,7 +28,8 @@ const Navbar = ({ type = 'secondary' }) => {
     <FullWithBox type={type}>
       <Container className='er-wrapper'>
         <Link to={'/'}>
-          <Logo />
+          <img className='logo-img' src={logo} alt='' />
+          {/* <Logo /> */}
         </Link>
 
         <NavItems>

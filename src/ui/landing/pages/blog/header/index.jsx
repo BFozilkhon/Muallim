@@ -6,7 +6,7 @@ const BlogHeader = () => {
   return (
     <Container className='er-wrapper'>
       <Container.LocationText>Home / Blog</Container.LocationText>
-      <Container.Header>Blog EduRate.</Container.Header>
+      <Container.Header>Blog Muallim.</Container.Header>
       <Container.Description>
         We share knowledge in the field of business automation, as well as
         insights that come to us in the process of development and

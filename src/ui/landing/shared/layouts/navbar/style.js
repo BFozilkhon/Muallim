@@ -10,6 +10,18 @@ export const FullWithBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .logo-img {
+    width: 230px;
+    height: 80px;
+  }
+
+  @media (max-width: 600px) {
+    .logo-img {
+      width: 180px;
+      height: 60px;
+    }
+  }
 `;
 
 export const Container = styled.div`
@@ -95,7 +107,7 @@ ButtonContainer.Login = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: var(--primary-color);  
+    color: var(--primary-color);
   }
 
   @media (max-width: 1200px) {
